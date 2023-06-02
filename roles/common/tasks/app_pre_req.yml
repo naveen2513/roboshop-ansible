@@ -18,14 +18,6 @@
     dest: /app
     remote_src: yes
 
-- name: Include task list in play
-  ansible.builtin.import_tasks:
-      file: app_pre_req.yml
-
-- name: install nodejs dependencies
-  ansible.builtin.shell: npm install
-  args:
-    chdir: /app
 
 
 
