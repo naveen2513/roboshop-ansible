@@ -1,4 +1,4 @@
-- name: Install NGINX
+- name: Install Nginx
   ansible.builtin.yum:
     name: nginx
     state: installed
@@ -25,7 +25,7 @@
     dest: /usr/share/nginx/html
     remote_src: yes
 
-- name: start nginx
+- name: Start Nginx
   ansible.builtin.systemd:
     state: restarted
     name: nginx
