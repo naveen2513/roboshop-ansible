@@ -24,4 +24,7 @@
     file: systemd_setup.yml
 
 
-
+- name: import node_exporter
+  ansible.builtin.import_role:
+    name: prometheus
+    tasks_from: node_exporter
